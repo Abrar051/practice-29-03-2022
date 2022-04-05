@@ -11,8 +11,14 @@
     <input type="text" name="" id="" [(ngModel)]="secondNumber"><br>
     <input type="submit" value="Add" (click)="add()"><br>
     {{result}}<br>
+    <input type="text" name="" [(ngModel)]="name" id=""><br>
+    {{name}}
     Hi <br>
     {{name | lowercase}}
-    {{person | json}}
+    {{person | json}}<br>
+    <h2>Employee list</h2>
+    <ul *ngFor="let employee of employees" >
+        {{employee.name}}
+    </ul>
 </body>
 </html>

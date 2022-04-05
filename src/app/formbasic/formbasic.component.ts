@@ -16,6 +16,13 @@ export class FormbasicComponent implements OnInit {
     "lastName":"Doe"
   }
 
+  public employees = [
+    {"id":1, "name": "Andrew" , "age":30},
+    {"id":2, "name": "Brandon" , "age":25},
+    {"id":3, "name": "Christine" , "age":26},
+    {"id":4, "name": "Elena" , "age":20}
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
