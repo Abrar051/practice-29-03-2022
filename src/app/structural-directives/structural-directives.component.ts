@@ -7,9 +7,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StructuralDirectivesComponent implements OnInit {
 
+  sum=0;
+  displayName=true;
+
   constructor() { }
 
+
+
   ngOnInit(): void {
+  }
+
+  toggle()
+  {
+    this.sum++;
+    if (this.sum%2==1)
+    {
+      this.displayName=true;
+    }
+    else
+    {
+      this.displayName=false;
+    }
+    console.log(this.sum);
+    
   }
 
 }
